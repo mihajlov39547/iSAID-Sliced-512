@@ -1,3 +1,6 @@
+[![GitHub release](https://img.shields.io/github/v/release/mihajlov39547/iSAID-Sliced-512)](https://github.com/mihajlov39547/iSAID-Sliced-512/releases)
+
+
 # iSAID-512Tiles
 
 512×512 sliced image tiles and YOLO-format annotations derived from the iSAID aerial imagery dataset, created by **
