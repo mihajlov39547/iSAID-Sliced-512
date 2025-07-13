@@ -1,6 +1,6 @@
 # iSAID-512Tiles
 
-512×512 sliced image tiles and YOLO-format annotations derived from the iSAID aerial imagery dataset, created by Marko Mihajlovic for academic use in instance segmentation.
+512×512 sliced image tiles and YOLO-format annotations derived from the iSAID aerial imagery dataset, created by **Marko Mihajlovic** for academic use in instance segmentation.
 
 ---
 
@@ -22,18 +22,23 @@ This dataset consists of approximately **10,000 image tiles** derived from the i
 ## 🗂️ Repository Contents
 
 ```
-
 iSAID-512Tiles/
-├── images/           # 512×512 PNG image tiles from train+val splits
-├── labels/           # YOLO‑style .txt annotation files with class IDs only
-├── LICENSE           # CC BY‑NC 4.0 license
-└── README.md         # This documentation
-```
+├── train/
+│   ├── images/
+│   └── labels/
+├── valid/
+│   ├── images/
+│   └── labels/
+├── test/
+│   ├── images/
+│   └── labels/
+├── LICENSE
+└── README.md
 ```
 
-- `images/` contains 512×512 `.jpg` image tiles
-- `labels/` contains YOLO-format `.txt` annotation files
-- File naming format: `tile_000022_jpg.rf.963f01347ea22d1139e70faf42fd3065.jpg`
+- `images/` contains 512×512 `.jpg` image tiles  
+- `labels/` contains YOLO-format `.txt` annotation files  
+- File naming format: `tile_000022_jpg.rf.963f01347ea22d1139e70faf42fd3065.jpg`, `tile_000022_jpg.rf.963f01347ea22d1139e70faf42fd3065.txt`
 
 ---
 
@@ -69,7 +74,7 @@ Each `.txt` annotation file uses YOLO normalized format:
 <class_id> <x_center> <y_center> <width> <height>
 ```
 
-Values range from 0 to 1.
+All values are normalized between 0 and 1.
 
 ---
 
@@ -80,7 +85,7 @@ Values range from 0 to 1.
    [https://github.com/CAPTAIN-WHU/iSAID_Devkit](https://github.com/CAPTAIN-WHU/iSAID_Devkit)
 3. Use the `split.py` script to divide large iSAID images into 512×512 tiles.
 4. Generate YOLO-compatible annotations for each tile using bounding box conversion scripts.
-5. Organize into train/val/test sets in YOLO folder structure.
+5. Organize into `train`, `valid`, and `test` sets in YOLO folder structure.
 
 ---
 
@@ -94,6 +99,7 @@ To evaluate results on the original iSAID benchmark:
 - A method description (≥ 120 words) in English is required.
 
 For local evaluation, use the official devkit’s script:
+
 ```bash
 python evaluate/evaluate.py
 ```
@@ -125,7 +131,7 @@ If you use this dataset, please cite:
 }
 ```
 
-And also cite the following original datasets:
+Also cite the following original datasets:
 
 ```bibtex
 @inproceedings{waqas2019isaid,
@@ -141,6 +147,32 @@ And also cite the following original datasets:
   booktitle={CVPR},
   year={2018}
 }
+
+@ARTICLE{9560031,
+  author={Ding, Jian and Xue, Nan and Xia, Gui-Song and Bai, Xiang and Yang, Wen and Yang, Michael and Belongie, Serge and Luo, Jiebo and Datcu, Mihai and Pelillo, Marcello and Zhang, Liangpei},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  title={Object Detection in Aerial Images: A Large-Scale Benchmark and Challenges},
+  year={2021},
+  volume={},
+  number={},
+  pages={1-1},
+  doi={10.1109/TPAMI.2021.3117983}}
+
+@InProceedings{Xia_2018_CVPR,
+author = {Xia, Gui-Song and Bai, Xiang and Ding, Jian and Zhu, Zhen and Belongie, Serge and Luo, Jiebo and Datcu, Mihai and Pelillo, Marcello and Zhang, Liangpei},
+title = {DOTA: A Large-Scale Dataset for Object Detection in Aerial Images},
+booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+month = {June},
+year = {2018}
+}
+
+@InProceedings{Ding_2019_CVPR,
+author = {Jian Ding, Nan Xue, Yang Long, Gui-Song Xia, Qikai Lu},
+title = {Learning RoI Transformer for Detecting Oriented Objects in Aerial Images},
+booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+month = {June},
+year = {2019}
+}
 ```
 
 ---
@@ -149,7 +181,7 @@ And also cite the following original datasets:
 
 - Full-resolution iSAID and DOTA datasets must be downloaded separately.
 - This repository contains only 512×512 sliced tiles and YOLO-format annotations.
-- Use the devkit to reproduce large image splits or to evaluate performance against the benchmark.
+- Use the iSAID Devkit to reproduce large image splits or evaluate performance against the benchmark.
 
 ---
 
