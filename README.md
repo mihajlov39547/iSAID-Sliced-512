@@ -1,6 +1,7 @@
 # iSAID-512Tiles
 
-512×512 sliced image tiles and YOLO-format annotations derived from the iSAID aerial imagery dataset, created by **Marko Mihajlovic** for academic use in instance segmentation.
+512×512 sliced image tiles and YOLO-format annotations derived from the iSAID aerial imagery dataset, created by **
+mihajlov39547** for academic use in instance segmentation.
 
 ---
 
