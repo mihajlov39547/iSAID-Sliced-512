@@ -87,8 +87,46 @@ All values are normalized between 0 and 1.
 2. Use the official devkit:  
    [https://github.com/CAPTAIN-WHU/iSAID_Devkit](https://github.com/CAPTAIN-WHU/iSAID_Devkit)
 3. Use the `split.py` script to divide large iSAID images into 512×512 tiles.
-4. Generate YOLO-compatible annotations for each tile using bounding box conversion scripts.
-5. Organize into `train`, `valid`, and `test` sets in YOLO folder structure.
+4. Organize into `test` sets in YOLO folder structure.
+
+---
+
+## 🧾 test_info.json
+
+The `test_info.json` file provides metadata for the test image tiles included in the dataset.
+
+### Contents
+
+Each entry in `test_info.json` includes:
+
+- `file_name`: Name of the tile image (e.g., `tile_000123.jpg`)
+- `id`: Unique image ID
+- `width`, `height`: Dimensions of the tile (typically 512×512)
+- `orig_img`: Name of the original large image from iSAID (e.g., `P0001.png`)
+- `orig_width`, `orig_height`: Dimensions of the original image
+- `x_offset`, `y_offset`: Coordinates of the tile within the original image
+
+### Example Entry
+
+```json
+{
+  "file_name": "tile_000123.jpg",
+  "id": 123,
+  "width": 512,
+  "height": 512,
+  "orig_img": "P0001.png",
+  "orig_width": 4000,
+  "orig_height": 4000,
+  "x_offset": 1024,
+  "y_offset": 512
+}
+```
+
+### Purpose
+
+- Enables mapping tile predictions back to full-sized iSAID images.
+- Useful for merging tiles, visualization, or structured evaluation.
+- No annotation data is included in this file—it is strictly for tile metadata.
 
 ---
 
