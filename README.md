@@ -1,5 +1,6 @@
 [![GitHub release](https://img.shields.io/github/v/release/mihajlov39547/iSAID-Sliced-512)](https://github.com/mihajlov39547/iSAID-Sliced-512/releases)
 
+[![DOI](https://zenodo.org/badge/1019023896.svg)](https://doi.org/10.5281/zenodo.18076179)
 
 # iSAID-512Tiles
 
