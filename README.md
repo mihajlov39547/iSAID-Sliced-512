@@ -1,10 +1,9 @@
 [![GitHub release](https://img.shields.io/github/v/release/mihajlov39547/iSAID-Sliced-512)](https://github.com/mihajlov39547/iSAID-Sliced-512/releases)
-
 [![DOI](https://zenodo.org/badge/1019023896.svg)](https://doi.org/10.5281/zenodo.18076179)
 
 # iSAID-512Tiles
 
-512×512 sliced image tiles and YOLO-format annotations derived from the iSAID aerial imagery dataset, created by **mihajlov39547** for academic use in instance segmentation.
+A dataset of 512×512 sliced aerial image tiles with YOLO-format annotations, derived from the iSAID benchmark dataset and released for academic research in instance segmentation.
 
 ---
 
