@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+title: "iSAID-512Tiles: A Sliced Aerial Image Dataset for Instance Segmentation"
+message: "If you use this dataset in your research, please cite it as below."
+type: dataset
+authors:
+  - family-names: Mihajlovic
+    given-names: Marko
+    affiliation: "Singidunum University, Belgrade, Serbia"
+version: 1.0.1
+doi: 10.5281/zenodo.18076179
+date-released: 2025-01-01
+publisher: Zenodo
+url: https://doi.org/10.5281/zenodo.18076179
+license: CC-BY-4.0
