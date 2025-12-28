@@ -165,11 +165,13 @@ If you use this dataset, please cite:
 
 ```bibtex
 @misc{mihajlovic2025isaid512tiles,
-  title={iSAID-512Tiles: A Sliced Aerial Image Dataset for Instance Segmentation},
-  author={Marko Mihajlovic},
-  year={2025},
-  howpublished={\url{https://github.com/mihajlov39547/iSAID-Sliced-512}},
-  note={Singidunum University, Belgrade, Serbia}
+  title        = {iSAID-512Tiles: A Sliced Aerial Image Dataset for Instance Segmentation},
+  author       = {Mihajlovic, Marko},
+  year         = {2025},
+  publisher    = {Zenodo},
+  doi          = {10.5281/zenodo.18076179},
+  url          = {https://doi.org/10.5281/zenodo.18076179},
+  note         = {Dataset},
 }
 ```
 
